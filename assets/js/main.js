@@ -1,4 +1,6 @@
 (() => {
+  // Progressive enhancement: content remains visible if JavaScript is unavailable.
+  document.documentElement.classList.add("js-enabled");
   const config = window.NEURA_CONFIG || {};
   const pages = [{href:"index.html",label:"Home"},{href:"features.html",label:"Features"},{href:"pricing.html",label:"Pricing"},{href:"about.html",label:"About"},{href:"faq.html",label:"FAQ"}];
   const current = location.pathname.split("/").pop() || "index.html";
