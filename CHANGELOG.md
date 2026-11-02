@@ -1,11 +1,15 @@
 # Changelog
 
+## 1.2.0 — 2026-11-02
+- Redesigned the admin dashboard to match the public Neura brand identity.
+- Replaced the unrelated purple UI with cream, charcoal, orange, and lime styling.
+- Split dashboard styles and scripts into dedicated files for easier buyer customization.
+- Added customer directory, billing overview, AI activity, inbox, integrations, and settings views.
+- Added responsive navigation, search, CSV sample exports, and clearer demo-data notices.
+- Updated Codester listing copy and setup/security documentation.
+
 ## 1.1.0 — 2026-11-02
-- Added a separate responsive admin control room.
-- Added overview analytics, sample revenue chart, and plan distribution.
-- Added searchable users, subscription view, AI usage, website content preview, inbox, and workspace settings.
-- Added CSV exports and browser-local demo interactions.
-- Updated documentation and marketplace listing with backend/security limitations.
+- Added a separate responsive admin control room with sample analytics and admin views.
 
 ## 1.0.0 — 2026-11-02
 - Initial Neura AI SaaS marketing template with six responsive pages.
