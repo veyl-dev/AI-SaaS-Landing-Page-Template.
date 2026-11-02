@@ -1,12 +1,16 @@
 # Changelog
 
+## 1.3.0 — 2026-11-02
+- Replaced the generic business-admin dashboard with an AI product workspace.
+- Added an AI playground with model selection, prompt composer, temperature control, and clearly labeled simulated responses.
+- Added model library, knowledge-base UI, API key preview, token usage and billing, API logs, and AI provider integrations.
+- Introduced a dedicated dark AI interface with violet and cyan accents, responsive layouts, and AI-specific metrics.
+- Updated documentation, Codester listing copy, and automated smoke tests.
+
 ## 1.2.0 — 2026-11-02
 - Redesigned the admin dashboard to match the public Neura brand identity.
-- Replaced the unrelated purple UI with cream, charcoal, orange, and lime styling.
 - Split dashboard styles and scripts into dedicated files for easier buyer customization.
-- Added customer directory, billing overview, AI activity, inbox, integrations, and settings views.
-- Added responsive navigation, search, CSV sample exports, and clearer demo-data notices.
-- Updated Codester listing copy and setup/security documentation.
+- Added responsive navigation, sample analytics, CSV exports, and demo-data notices.
 
 ## 1.1.0 — 2026-11-02
 - Added a separate responsive admin control room with sample analytics and admin views.
