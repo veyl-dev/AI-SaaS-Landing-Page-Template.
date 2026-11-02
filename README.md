@@ -1,26 +1,43 @@
-# Neura — AI SaaS Website & Admin Dashboard Template
+# Neura — AI SaaS Website & Admin Dashboard HTML Template
 
-A distinctive, responsive AI SaaS website and matching admin control-room UI by **Universe404 Dev**. Built with semantic HTML5, custom CSS, and vanilla JavaScript.
+A responsive HTML5 template for AI products, SaaS startups, and software businesses. Neura pairs a distinctive cream / charcoal / orange public website with a matching admin dashboard. Built with semantic HTML, custom CSS, and vanilla JavaScript—no build step or framework required.
 
 ## Public website
-- `index.html` — editorial-style homepage
-- `features.html` — feature sections
-- `pricing.html` — pricing cards with monthly/yearly toggle
-- `about.html` — brand story and values
-- `contact.html` — contact form with optional HTTPS endpoint
-- `faq.html` — FAQ
+- `index.html` — marketing homepage
+- `features.html` — feature overview
+- `pricing.html` — pricing cards and billing-period toggle
+- `about.html` — company story and values
+- `contact.html` — contact form UI with optional HTTPS endpoint
+- `faq.html` — frequently asked questions
 
 ## Admin dashboard
-Open `admin/index.html` for the dashboard demo. It includes SaaS overview metrics, revenue and plan charts, searchable users, subscriptions, AI usage, website content preview editor, contact inbox, workspace settings, and CSV exports.
+Open `admin/index.html`. Included views:
+- Overview metrics, revenue chart, plan distribution, and recent activity
+- Searchable customer directory
+- Subscription and billing overview
+- AI request / token usage overview
+- Customer support inbox UI
+- Integration showcase cards
+- Workspace settings preview
+- Responsive sidebar and CSV demo exports
 
 ## Quick start
-1. Download or clone this repository.
-2. Open `index.html` for the public website or `admin/index.html` for the dashboard.
-3. Edit brand, form endpoints, checkout links, and social links in `assets/js/config.js`.
-4. Replace all sample copy, metrics, prices, and claims with real business information.
-5. Deploy the folder to any static host.
+1. Download and extract the ZIP.
+2. Open `index.html` to preview the public website.
+3. Open `admin/index.html` to preview the dashboard.
+4. Edit `assets/js/config.js` to configure brand text, contact endpoint, hosted checkout links, and social URLs.
+5. Replace demo content, prices, analytics, and sample customer records before launch.
+6. Upload the project folder to your preferred static host.
 
-## Important limitations
-This is a **front-end template and dashboard UI**, not a working SaaS backend. Dashboard metrics, users, subscriptions, AI usage, and messages are fictional demo data. Content/settings changes are stored only in the current browser; the editor does not publish changes to the public pages. There is no real authentication, role enforcement, database, AI inference, billing, or publishing pipeline. Connect secure server-side APIs and authentication before using with real customer data. Never put private keys in browser JavaScript.
+## Customization
+- Public site styles: `assets/css/styles.css`
+- Public site settings: `assets/js/config.js`
+- Public site interactions: `assets/js/main.js`
+- Dashboard markup: `admin/index.html`
+- Dashboard styles: `admin/admin.css`
+- Dashboard interactions and sample records: `admin/admin.js`
 
-See [DOCUMENTATION.md](DOCUMENTATION.md) for setup details and [CODESTER-LISTING.md](CODESTER-LISTING.md) for marketplace metadata.
+## Important scope
+This download is a **front-end HTML template**, not a complete SaaS application. Dashboard records and metrics are illustrative. Search, navigation, CSV sample exports, inbox read-state, and browser-local settings are demo interactions. There is no real login, authentication, authorization, database, payment processing, AI inference, or live integration. The settings preview does not change the public website. Connect protected server-side APIs and authentication before using real customer information. Never put secret API keys in client-side files.
+
+See [DOCUMENTATION.md](DOCUMENTATION.md) for implementation notes and [CODESTER-LISTING.md](CODESTER-LISTING.md) for suggested marketplace copy.
