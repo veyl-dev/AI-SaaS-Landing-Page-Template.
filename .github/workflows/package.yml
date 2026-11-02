@@ -1,0 +1,29 @@
+name: Package Template
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run smoke tests
+        run: node scripts/smoke-test.mjs
+      - name: Create distributable ZIP
+        run: |
+          mkdir -p dist
+          zip -r dist/Neura-AI-SaaS-Template-1.0.0.zip . -x ".git/*" ".github/*" "dist/*"
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Neura-AI-SaaS-Template-1.0.0
+          path: dist/Neura-AI-SaaS-Template-1.0.0.zip
+          if-no-files-found: error
+          retention-days: 90
