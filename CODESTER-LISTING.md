@@ -1,22 +1,32 @@
 # Marketplace Listing — Neura
 
-**Suggested title:** Neura — AI SaaS Website & Admin Dashboard HTML Template  
+**Suggested title:** Neura — AI SaaS Landing Page & Admin Dashboard HTML Template  
 **Publisher:** Universe404 Dev  
 **Category:** Themes → HTML  
-**Suggested price:** USD $18 (seller decision; verify marketplace pricing guidance)
+**Suggested price:** USD $18 (seller choice; confirm current marketplace guidance)
 
 ## Description
-Neura is a responsive AI SaaS website template with a distinctive editorial public website and a separate admin control-room interface. It includes six public pages plus an admin dashboard demo with overview analytics, user directory, subscriptions, AI usage, website content preview, contact inbox, and workspace settings.
+Give your AI product or SaaS startup a polished web presence with Neura. This responsive HTML5 template includes a complete multi-page marketing website and a matching admin dashboard UI, designed as one consistent product identity.
 
-Built with semantic HTML5, custom CSS, and vanilla JavaScript. No framework or build process required.
+The public website uses a distinctive editorial visual style with warm cream surfaces, charcoal typography, orange highlights, and lime details. The dashboard carries the same visual language into a practical workspace layout with a responsive sidebar, analytics overview, customer directory, subscriptions, AI usage, support inbox, integration cards, and settings preview.
 
-## Included files
-- 7 HTML pages (6 public pages + admin dashboard)
+### Highlights
+- 6 public website pages plus 1 admin dashboard page
+- Responsive desktop, tablet, and mobile layouts
 - Custom CSS and vanilla JavaScript
-- Documentation, changelog, and smoke test
+- Customer search and CSV demo exports
+- Pricing-period toggle and interactive navigation
+- Organized, easy-to-edit source files
+- Documentation and customization guide
+- No framework or build process required
 
-## Important disclosure
-Front-end template only. Dashboard metrics and records are sample data; content/settings are browser-local demo interactions. No authentication, backend, database, AI inference, billing, or real publishing is included. Buyers must connect secure server-side services before production use.
+### Files included
+- HTML5, CSS3, and JavaScript source
+- Dashboard styles and scripts
+- README, documentation, changelog, and smoke test
+
+### Important note
+This is a front-end HTML template. Admin analytics and customer records are sample data; demo interactions do not connect to a backend. Authentication, database, billing, AI inference, and live third-party integrations are not included. Buyers can connect their own secure backend and services.
 
 ## Suggested tags
-ai saas, admin dashboard, html template, landing page, saas website, startup, technology, responsive, html5, css3, javascript, analytics dashboard, admin panel, software
+ai saas, saas landing page, admin dashboard, html5 template, website template, responsive, startup, software, css3, javascript, analytics, admin panel, business, technology
