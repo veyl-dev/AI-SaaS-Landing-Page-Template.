@@ -1,28 +1,44 @@
 # Neura Template Documentation
 
-## Structure
+## Package structure
 - Public pages: `index.html`, `features.html`, `pricing.html`, `about.html`, `contact.html`, `faq.html`
-- Admin dashboard demo: `admin/index.html`
-- Public styles/scripts: `assets/css/styles.css`, `assets/js/config.js`, `assets/js/main.js`
-- Admin dashboard styles and interactions are embedded in `admin/index.html`.
+- Admin dashboard: `admin/index.html`
+- Dashboard assets: `admin/admin.css`, `admin/admin.js`
+- Public assets: `assets/css/styles.css`, `assets/js/config.js`, `assets/js/main.js`
 
-## Admin dashboard demo
-Open `admin/index.html`. The sidebar switches between Overview, Users, Subscriptions, AI usage, Website content, Messages, and Settings. The demo includes searchable sample users, CSV exports, mark-as-read message interactions, and local preview settings/content saved with localStorage.
+## Preview
+Open the root `index.html` or `admin/index.html` directly in a modern browser. No npm install, build command, or framework is required. Keep the supplied folder structure intact so relative asset paths continue to work.
 
-All dashboard records and analytics are sample data. The content editor does not update the public HTML or publish changes. The UI is intentionally presented as a preview, not as a secure admin system.
+## Admin dashboard views
+The sidebar provides Overview, Customers, Plans & billing, AI activity, Inbox, Integrations, and Settings. The dashboard includes responsive navigation, searchable sample customer rows, CSV downloads, sample inbox messages with read-state interaction, and local browser settings.
 
-## Connect a real backend
-Before production use, implement server-side authentication and authorization, enforce admin roles on every API request, and connect each dashboard view to protected endpoints. Use a database for users, subscriptions, messages, and usage records. Connect billing through a trusted payment provider and verify webhook signatures server-side. Store secrets only in server-side environment variables. Never rely on hidden UI elements or client-side checks for access control.
+All dashboard records and metrics are fictional preview data. Integration cards are illustrative and do not connect to third-party services. The settings preview is stored in localStorage and does not update the public website.
 
-## Public website configuration
-Edit `assets/js/config.js`: `brand`, `tagline`, `contactEndpoint`, `checkout.starter/pro/team`, `social`, and `footerNote`. Contact and checkout integrations require your own endpoints/hosted URLs; the template does not process payments.
+## Customize the public website
+Edit `assets/js/config.js`:
+- `brand` and `tagline`
+- `contactEndpoint` — optional HTTPS endpoint that accepts a JSON POST
+- `checkout.starter`, `checkout.pro`, and `checkout.team` — hosted checkout URLs
+- `social` — social profile URLs
+- `footerNote` — footer copyright text
+
+The template does not include a payment gateway. Use hosted checkout from a payment provider and verify all payment events server-side.
+
+## Customize the admin dashboard
+- Change the HTML layout and labels in `admin/index.html`.
+- Change colors, spacing, typography, and responsive breakpoints in `admin/admin.css`. The dashboard uses the same CSS variables and visual language as the public website.
+- Replace the example arrays in `admin/admin.js` with API responses from your own application.
+- Replace demo CSV data with real authorized data only after implementing protected server-side access.
+
+## Production integration and security
+This is a static front-end UI. It does not include authentication, admin roles, a database, billing, AI model calls, or live integrations. Before production use:
+1. Implement secure sign-in and server-side session handling.
+2. Enforce authorization on every protected API endpoint; hiding dashboard links is not access control.
+3. Store users, subscriptions, messages, and usage data in a server-side database.
+4. Connect billing through a payment provider; verify webhook signatures on the server.
+5. Keep provider secrets in server-side environment variables, never in browser JavaScript.
+6. Add privacy policy, terms, cookie disclosures, and any required compliance pages.
+7. Test keyboard navigation, screen sizes, forms, and all backend error states.
 
 ## Deployment
-Upload the repository root to a static host. No build command is required. Ensure relative paths are preserved so `admin/index.html` can load its assets and link back to the public pages.
-
-## Before production
-1. Replace fictional Neura copy, metrics, prices, and customer records.
-2. Configure hosted checkout and contact endpoints.
-3. Add privacy policy, terms, and required disclosures.
-4. Implement secure authentication, admin authorization, APIs, and persistent storage.
-5. Test all pages and admin flows on desktop and mobile.
+Upload the project folder to any static hosting provider. No compilation is required. Use HTTPS when configuring contact or checkout endpoints.
